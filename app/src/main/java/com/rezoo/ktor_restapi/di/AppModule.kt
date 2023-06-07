@@ -21,6 +21,6 @@ object AppModule {
             .addConverterFactory(GsonConverterFactory.create())
             .baseUrl(CatsApi.BASE_URL)
             .build()
-            .create()
+            .create(CatsApi::class.java)
     }
 }
