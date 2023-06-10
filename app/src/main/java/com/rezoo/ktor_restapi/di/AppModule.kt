@@ -23,4 +23,10 @@ object AppModule {
             .build()
             .create(CatsApi::class.java)
     }
+
+    @Provides
+    @Singleton
+    fun provideRepository(){
+
+    }
 }
